@@ -1,0 +1,21 @@
+body {
+    color:#EAC926;
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+
+#visita h3 {
+    font-size: 24px;
+}
+
+section p:first-child {
+    font-size: 18px;
+}
+
+section p:last-child {
+    font-size: 16px;
+}
+
+footer section p {
+    font: size 16px;
+}
