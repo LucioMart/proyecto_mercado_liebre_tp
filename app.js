@@ -8,6 +8,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'home.html'))
 })
 
-app.use(express.static("public/images"))
+app.use(express.static("public"))
+//app.use(express.static(""))
 
 app.listen(port, () => console.log('Server runing in localhost:3030'))

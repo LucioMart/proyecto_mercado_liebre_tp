@@ -1,11 +1,17 @@
 body {
-    background-color:#EAC926;
+    background-color:#ebebeb;
     font-family: 'Roboto';
     font-size: 12px;
 }
 
-#visita h3 {
+header {
+    width: 100%;
+    background-color: #EAC926;
+}
+
+#visita h3, #ofertas h3 {
     font-size: 24px;
+    text-align: center;
 }
 
 section p:first-child {
@@ -16,6 +22,36 @@ section p:last-child {
     font-size: 16px;
 }
 
-footer section p {
+.burger-menu i {
+    background-color: #1259c3;
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer section article .icon-footer  {
+    font-size: 2em;
+    color: #1259c3;
+}
+
+
+section article, .burger-menu {
+    text-align: center;
+}
+
+
+footer section {
+    background-color: #fff;
+    padding: 10px;
+}
+
+footer section article p {
     font: size 16px;
+    color: #666;
+}
+
+footer section article.copyright p {
+    font-size: 10px;
+    text-align: left;
 }
