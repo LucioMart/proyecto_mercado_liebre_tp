@@ -4,6 +4,14 @@ body {
     font-size: 12px;
 }
 
+main {
+    width: 90vw;
+}
+
+section article {
+    margin-top: 10px; 
+}
+
 header {
     width: 100%;
     background-color: #EAC926;
