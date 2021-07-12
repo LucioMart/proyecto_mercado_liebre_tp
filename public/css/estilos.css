@@ -6,10 +6,23 @@ body {
     background-color:#ebebeb;
     font-family: 'Roboto';
     font-size: 12px;
+    width: 95vw;
 }
 
-main {
+header, main, footer {
     width: 90vw;
+}
+
+.encabezado {
+    text-align: center;
+    font-weight: normal;
+    font-size: normal;
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 section {
@@ -19,10 +32,6 @@ section {
 section article {
     width: 100%;
     margin-top: 10px;
-}
-
-img {
-    width: 100%;
 }
 
 div.pre_desc {
@@ -80,7 +89,6 @@ section p:last-child {
 article .icon-footer  {
     font-size: 2em;
     color: #1259c3;
-   text-align: center;
 }
 
 
@@ -88,6 +96,10 @@ article .icon-footer  {
     text-align: center;
 }
 
+footer section article {
+    text-align: center;
+    padding-top: 15px;
+}
 
 footer section article p {
     font-size: 16px;
@@ -97,4 +109,28 @@ footer section article p {
 article.copyright p {
     font-size: 10px;
     text-align: left;
+}
+
+img {
+    width: 100%;
+}
+
+@media(max-width: 360px) {
+    div.pre_desc .descripcion{
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+
+}
+
+@media(min-width: 361px) {
+    section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media(min-width: 769px) {
+
 }
