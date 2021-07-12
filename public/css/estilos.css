@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color:#ebebeb;
     font-family: 'Roboto';
@@ -8,8 +12,28 @@ main {
     width: 90vw;
 }
 
+section {
+    width: 100%;
+}
+
 section article {
-    margin-top: 10px; 
+    width: 100%;
+    margin-top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+div.pre_desc {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ebebeb;
+}
+
+div.pre_desc p.descuento {
+    color: #39b54a;
+    font-size: 1.2em;
 }
 
 header {
@@ -19,7 +43,23 @@ header {
 
 #visita h3, #ofertas h3 {
     font-size: 24px;
-    text-align: center;
+}
+
+div.icon_envio {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0;
+    border: 1px solid #39b54a;
+    border-radius: 1000px;
+    color: #39b54a;
+}
+
+div.icon_envio .envio {
+    position: relative;
+    left: 9px;
+    top: 5px;
 }
 
 section p:first-child {
@@ -37,29 +77,24 @@ section p:last-child {
     padding: 10px;
     border-radius: 5px;
 }
-
-footer section article .icon-footer  {
+article .icon-footer  {
     font-size: 2em;
     color: #1259c3;
+   text-align: center;
 }
 
 
-section article, .burger-menu {
+.burger-menu {
     text-align: center;
 }
 
 
-footer section {
-    background-color: #fff;
-    padding: 10px;
-}
-
 footer section article p {
-    font: size 16px;
+    font-size: 16px;
     color: #666;
 }
 
-footer section article.copyright p {
+article.copyright p {
     font-size: 10px;
     text-align: left;
 }
