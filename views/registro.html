@@ -44,12 +44,37 @@
         </div>
         
     </header>
-    <main>
+    <main class="registro">
         <img src="images/img-home-banner.jpg" alt="Banner Home">
         <h3>Registro</h3>
         <section id="registro"> 
             
-        
+            <form action="" method="post" enctype="multipart/form-data">
+                <input type="text" name="nombreyapellido" id="" placeholder="Nombre y apellido">
+                <input type="text" name="usuario" id="" placeholder="Nombre de usuario">
+                <input type="email" name="email" id="" placeholder="E-mail">
+                <label for="">Fecha de nacimiento:</label>
+                <input type="date" name="nacimiento" id="">
+                <input type="text" name="domicilio" id="" placeholder="Domicilio">
+                <label for="perfil">Perfil de usuario</label>
+                <div class="radio">
+                    <input type="radio" name="perfil_de_usuario" id="" value="Comprador">Comprador
+                    <input type="radio" name="perfil_de_usuario" id="" value="Vendedor">Vendedor
+                </div>
+                <label for="interes">Intereses</label>
+                <div class="checkbox">
+                    <div class="check"><input type="checkbox" name="interes" id="" value="Electro">Electro</div>
+                    <div class="check"><input type="checkbox" name="interes" id="" value="Moda">Moda</div>
+                    <div class="check"><input type="checkbox" name="interes" id="" value="Hogar">Hogar</div>
+                    <div class="check"><input type="checkbox" name="interes" id="" value="Jugueteria">Jugueteria</div>
+                    <div class="check"><input type="checkbox" name="interes" id="" value="Vida sana">Vida Sana</div>
+                </div>
+                <input type="file" name="" id="" name="foto_usuario">
+                <input type="password" name="password" id="">
+                <input type="password" name="confirm_password" id="">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Cancelar">
+            </form>
         
         </section>
     </main>
