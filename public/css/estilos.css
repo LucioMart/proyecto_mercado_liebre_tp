@@ -188,7 +188,7 @@ main section article div.pre_desc h4.descripcion {
 
 main section {
     margin: 0px 10px;
-}
+} 
 
 main section article {
     width: 100%;
@@ -203,7 +203,7 @@ main section article img {
 /*  Main Registro */
 
 main.registro {
-    width: 90;
+    width: 95%;
     margin: 0 auto 10px;
 }
 
@@ -212,29 +212,72 @@ main.registro section {
 }
 
 main.registro section form {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding:10px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ebebeb;
+}
+
+main.registro section form label{
+	width:60%;
+    font-size: 1.3em;
+    padding: 10px;
+	font-weight:bold;
+	display:inline-block;
+    align-self: start;
+}
+
+main.registro section form input[type=text], input[type=password], input[type=date], input[type=email], input[type=file]{
+	width:95%;
+	padding:13px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
 }
 
 main.registro section form .radio {
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+main.registro section form .radio input {
+    margin-left: 10px;
 }
 
 main.registro section form .checkbox {
+    width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content:flex-start ;
     align-items: flex-start;
 }
 
 main.registro section form .checkbox .check {
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
+
+form input[type="submit"], form input[type="reset"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:2px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+    color: #fff;
+	background-color: #1259c3;
+} 
 
 
 /*     Footer        */
