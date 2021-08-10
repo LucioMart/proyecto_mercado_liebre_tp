@@ -16,13 +16,13 @@
         <div class="logo_search_encabezado">
             <div class="logo_search">
                 <img src="images/logo-mercado-liebre.svg" alt="">
-                <div class="search">
+                <form class="search" action="" method="post">
                     <input 
                         type="search" 
                         id="search" 
                         placeholder="Buscar productos, marcas, etc">
                     <i class="fa fa-search"></i>
-                </div>    
+                </form>    
             </div>
             <h3 class="encabezado"><i class="fas fa-hand-holding-usd"></i>Comprà en cuotas y sin targeta de crèdito</h3>
         </div>
@@ -34,8 +34,8 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="cuenta">
-                <li><a href="#">Creà tu cuenta</a><i class="far fa-id-card"></i></li>
-                <li><a href="#">Ingresà</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/registro">Creà tu cuenta</a><i class="far fa-id-card"></i></li>
+                <li><a href="/login">Ingresà</a><i class="fas fa-sign-in-alt"></i></li>
                 <li><a href="#">Mis compras</a><i class="fas fa-shopping-cart"></i></li>
             </ul>
         </nav>
@@ -46,16 +46,15 @@
     </header>
     <main class="registro">
         <img src="images/img-home-banner.jpg" alt="Banner Home">
-        <h3>Registro</h3>
+        
         <section id="registro"> 
-            
             <form action="" method="post" enctype="multipart/form-data">
-                <input type="text" name="nombreyapellido" id="" placeholder="Nombre y apellido">
-                <input type="text" name="usuario" id="" placeholder="Nombre de usuario">
-                <input type="email" name="email" id="" placeholder="E-mail">
+                <input type="text" name="nombreyapellido" id="" placeholder="Nombre y apellido" minlength="4" maxlength="30" required>
+                <input type="text" name="usuario" id="" placeholder="Nombre de usuario" minlength="4" maxlength="20" required>
+                <input type="email" name="email" id="" placeholder="E-mail" minlength="5" maxlength="30" required>
                 <label for="">Fecha de nacimiento:</label>
-                <input type="date" name="nacimiento" id="" data-date-format="DD-MMMM-YYYY">
-                <input type="text" name="domicilio" id="" placeholder="Domicilio">
+                <div class="date"><input type="date" name="nacimiento" id="" value="08-09-2021" value="08-09-1950" max="08-09-2003" required><i class="far fa-calendar"></i></div>
+                <input type="text" name="domicilio" id="" placeholder="Domicilio" minlength="4" maxlength="30">
                 <label for="perfil">Perfil de usuario</label>
                 <div class="radio">
                     <input type="radio" name="perfil_de_usuario" id="" value="Comprador"> 
@@ -81,9 +80,9 @@
                         <label for="voda">Vida sana</label>
                     </div>
                 </div>
-                <input type="file" name="" id="" name="foto_usuario" placeholder="Subir foto">
-                <input type="password" name="password" id="" placeholder="contraseña">
-                <input type="password" name="confirm_password" id="" placeholder="confirmar contraseña">
+                <input type="file" name="" id="" name="foto_usuario" placeholder="Subir foto" accept=".jpg" minlength="8" maxlength="30">
+                <input type="password" name="password" id="" placeholder="contraseña" minlength="4" maxlength="30" required>
+                <input type="password" name="confirm_password" id="" placeholder="confirmar contraseña" required>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Cancelar">
             </form>

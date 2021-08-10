@@ -16,13 +16,13 @@
         <div class="logo_search_encabezado">
             <div class="logo_search">
                 <img src="images/logo-mercado-liebre.svg" alt="">
-                <div class="search">
+                <form class="search" action="" method="post">
                     <input 
                         type="search" 
                         id="search" 
                         placeholder="Buscar productos, marcas, etc">
                     <i class="fa fa-search"></i>
-                </div>    
+                </form>    
             </div>
             <h3 class="encabezado"><i class="fas fa-hand-holding-usd"></i>Comprà en cuotas y sin targeta de crèdito</h3>
         </div>
@@ -34,8 +34,8 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="cuenta">
-                <li><a href="#">Creà tu cuenta</a><i class="far fa-id-card"></i></li>
-                <li><a href="#">Ingresà</a><i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="/registro">Creà tu cuenta</a><i class="far fa-id-card"></i></li>
+                <li><a href="/login">Ingresà</a><i class="fas fa-sign-in-alt"></i></li>
                 <li><a href="#">Mis compras</a><i class="fas fa-shopping-cart"></i></li>
             </ul>
         </nav>
@@ -44,14 +44,13 @@
         </div>
         
     </header>
-    <main>
+    <main class="login">
         <img src="images/img-home-banner.jpg" alt="Banner Home">
-        <h3>Iniciar sesión</h3>
+        
         <section id="login"> 
-            
             <form action="" method="post">
-                <input type="text" name="nombre_usuario" id="" placeholder="Nombre de usuari@">
-                <input type="password" name="password" id="" placeholder="Password">
+                <input type="text" name="nombreyapellido" id="" placeholder="Nombre de usuario" minlength="4" maxlength="30" required>
+                <input type="password" name="password" id="" placeholder="Elegí tu contraseña" minlength="4" maxlength="30" required>
                 <input type="submit" value="Enviar">
             </form>
         
